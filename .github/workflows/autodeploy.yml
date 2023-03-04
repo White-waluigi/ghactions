@@ -36,4 +36,5 @@ jobs:
           source: build/
           target: /var/www/main
           rm: true
+          strip_components: 1
 
