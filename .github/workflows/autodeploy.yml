@@ -23,7 +23,7 @@ jobs:
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
-          password: ${{ secrets.SERVER_PRIVATE_KEY }}
+          key: ${{ secrets.SERVER_PRIVATE_KEY }}
           script: |
             rm -rf /var/www/main/*
 
@@ -32,7 +32,7 @@ jobs:
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
-          password: ${{ secrets.SERVER_PRIVATE_KEY}}
+          key: ${{ secrets.SERVER_PRIVATE_KEY}}
           source: build/*
           target: /var/www/main
 
